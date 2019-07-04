@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Mrzbf的个人博客">
 <meta property="og:description" content="vue-cli 2.0版本根据环境变量打包 安装 cross-env 依赖1npm i cross-env -D   2.修改build.js12将process.env.NODE_ENV = &amp;apos;production&amp;apos;注释const spinner = ora(`building for $&amp;#123;process.env.NODE_ENV&amp;#125;...`) 3.修改co">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-14T09:26:44.611Z">
+<meta property="og:updated_time" content="2019-07-04T08:12:30.174Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue-cli中关于webpack的配置">
 <meta name="twitter:description" content="vue-cli 2.0版本根据环境变量打包 安装 cross-env 依赖1npm i cross-env -D   2.修改build.js12将process.env.NODE_ENV = &amp;apos;production&amp;apos;注释const spinner = ora(`building for $&amp;#123;process.env.NODE_ENV&amp;#125;...`) 3.修改co">
@@ -200,6 +200,7 @@
 </li>
 </ul>
 <p>3.在package.json文件中配置添加script,npm run build打包生产环境，npm run test打包正式环境<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;build&quot;: &quot;vue-cli-service build --mode production&quot;,</span><br><span class="line">    &quot;test&quot;: &quot;vue-cli-service build --mode test&quot;,</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure></p>
+<h3 id="vue-cli3中将资源文件不走babel编译"><a href="#vue-cli3中将资源文件不走babel编译" class="headerlink" title="vue-cli3中将资源文件不走babel编译"></a><a href="https://stackoverflow.com/questions/53628057/how-to-exclude-specific-file-from-babel-loader-when-using-vue-cli-setup" target="_blank" rel="noopener">vue-cli3中将资源文件不走babel编译</a></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">在babel.config.js文件中</span><br><span class="line">const path = require(&apos;path&apos;)</span><br><span class="line">module.exports = &#123;</span><br><span class="line">  presets: [],</span><br><span class="line">  plugins: [],</span><br><span class="line">  exclude: [</span><br><span class="line">    path.resolve(&apos;file path&apos;)</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
 
@@ -482,6 +483,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">gitment</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">前端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">vue-cli</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
@@ -498,39 +515,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">前端</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">gitment</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">vue-cli</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">github</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">element</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">javascript</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">小程序</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -546,11 +535,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">javaScript</a>
+                <a href="javascript:void(0)" class="js-tag color3">element</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">iframe</a>
+                <a href="javascript:void(0)" class="js-tag color1">javascript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">小程序</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -566,15 +559,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">微信小程序</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">vue-router</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">javaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">iframe</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">code 前端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">oss</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">node</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -590,11 +595,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">oss</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">node</a>
+                <a href="javascript:void(0)" class="js-tag color1">微信小程序</a>
               </li>
             
             <div class="clearfix"></div>
