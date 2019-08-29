@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://Mrzbf.github.io">
-  <title>Archives: 2018/2 | Mrzbf的个人博客</title>
+  <title>Mrzbf的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Mrzbf的个人博客">
-<meta property="og:url" content="http://Mrzbf.github.io/archives/2018/02/index.html">
+<meta property="og:url" content="http://Mrzbf.github.io/page/3/index.html">
 <meta property="og:site_name" content="Mrzbf的个人博客">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
@@ -152,58 +152,74 @@
           <div id="js-content" class="content-ll">
             
   
-  
+    <article id="post-前端开发中遇到的问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/02/05/日常开发踩坑/" class="archive-article-date">
-  	<time datetime="2018-02-05T12:02:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-05</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/02/05/日常开发踩坑/">宝塔代理配置、css文字溢出处理、jq懒加载插件使用、腾讯视频开发文档、webview中js与原生app交互、rem布局、js唤醒app</a>
+      <a class="article-title" href="/2017/12/06/前端开发中遇到的问题/">css是图片模糊、修改placeholder的样式、svn的使用、checkbox有checked属性但不选中的bug</a>
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/12/06/前端开发中遇到的问题/" class="archive-article-date">
+  	<time datetime="2017-12-06T03:14:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>css实现让图片模糊<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#blur</span>&#123;</span><br><span class="line"><span class="attribute">filter</span>:<span class="built_in">blur</span>(10px);</span><br><span class="line"><span class="attribute">-webkit-filter</span>:<span class="built_in">blur</span>(10px);</span><br><span class="line"><span class="attribute">-moz-filter</span>:<span class="built_in">blur</span>(10px);</span><br><span class="line"><span class="attribute">-ms-filter</span>:<span class="built_in">blur</span>(10px);</span><br><span class="line"><span class="attribute">-o-filter</span>:<span class="built_in">blur</span>(10px);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>2.svn使用</p>
+<ul>
+<li>先checkout 把代码down下来，然后再提交代码</li>
+</ul>
+<p>3.placeholder的文字样式的修改<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:-moz-placeholder</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ccc</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">::-moz-placeholder</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ccc</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:-ms-input-placeholder</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ccc</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">::-webkit-input-placeholder</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ccc</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>3.单选框和复选框默认样式修改问题<br>使用label标签的for属性关联单选框和复选框，将单选框或者复选框隐藏，调整label的样式即可。</p>
+<p>4.操作dom的样式使用类来修改，减少重排的次数以提高效率。</p>
+<p>5.获取查询字符串中的参数<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getSearchString</span>(<span class="params">key</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 获取URL中?之后的字符</span></span><br><span class="line">    <span class="keyword">var</span> str = location.search;</span><br><span class="line">    str = str.substring(<span class="number">1</span>,str.length);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 以&amp;分隔字符串，获得类似name=xiaoli这样的元素数组</span></span><br><span class="line">    <span class="keyword">var</span> arr = str.split(<span class="string">"&amp;"</span>);</span><br><span class="line">    <span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>();</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 将每一个数组元素以=分隔并赋给obj对象    </span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">        <span class="keyword">var</span> tmp_arr = arr[i].split(<span class="string">"="</span>);</span><br><span class="line">    <span class="comment">// 如果url参数是Unicode编码将url解码</span></span><br><span class="line">        obj[<span class="built_in">decodeURIComponent</span>(tmp_arr[<span class="number">0</span>])] = <span class="built_in">decodeURIComponent</span>(tmp_arr[<span class="number">1</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> obj[key];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>6.正则表达式<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//微信号正则表达式</span></span><br><span class="line"><span class="keyword">var</span> wxReg = <span class="regexp">/^[a-zA-Z]&#123;1&#125;[-_a-zA-Z0-9]&#123;5,19&#125;+$/</span>;</span><br><span class="line"><span class="comment">//QQ号正则表达式</span></span><br><span class="line"><span class="keyword">var</span> qqReg =<span class="regexp">/ [1-9][0-9]&#123;4,14&#125;/</span></span><br><span class="line"><span class="comment">// 6-20位字符</span></span><br><span class="line"> <span class="keyword">var</span> reg=<span class="regexp">/^([a-z0-9])&#123;6,20&#125;$/i</span>;</span><br></pre></td></tr></table></figure></p>
+<p>9.箭头函数没有独立执行上下文（ this ），所以其内部引用 this 对象会直接访问父级。</p>
+<p>10.使用axios发送jsonp请求：<a href="https://github.com/axios/axios/blob/master/COOKBOOK.md#jsonp" target="_blank" rel="noopener">https://github.com/axios/axios/blob/master/COOKBOOK.md#jsonp</a></p>
+<p>11.checkbox有checked属性但是不选中（使用prop属性就可以） <a href="https://blog.ttionya.com/article-937.html" target="_blank" rel="noopener">https://blog.ttionya.com/article-937.html</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">axios</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">宝塔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">reg</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">webview</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">rem</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">svn</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -216,17 +232,43 @@
 	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/12/06/前端开发中遇到的问题/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
-  
 
-    
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+    </nav>
+  
 
 
           </div>
@@ -248,9 +290,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
+		isHome: true,
 		isPost: false,
-		isArchive: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
